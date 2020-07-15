@@ -1,8 +1,7 @@
 package com.kshitij.protobuf;
 
-import simple.enumeg.day.DayEnum;
-
-import static simple.enumeg.day.DayEnum.*;
+import static simple.enumeg.day.DayEnum.DayOfTheWeekEnum;
+import static simple.enumeg.day.DayEnum.WeekDay;
 
 public class SimpleEnumApp {
     public static void main(String[] args){
@@ -11,6 +10,8 @@ public class SimpleEnumApp {
                 .setDayOfTheWeek(DayOfTheWeekEnum.MONDAY);
         WeekDay weekDay=weekDayBuilder.build();
         System.out.println("The weekday is "+weekDay);
+        //JsonFormat.printer().print(weekDayBuilder);
+
     }
 
 
